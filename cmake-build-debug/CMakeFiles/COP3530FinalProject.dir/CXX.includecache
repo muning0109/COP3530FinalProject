@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/muningchen/Desktop/COP3530FinalProject/main.cpp
+iostream
+-
+map
+-
+vector
+-
+string
+-
+fstream
+-
+set
+-
+stack
+-
+
