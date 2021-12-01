@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
-=======
 ../src/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h
 ../src/SFML-2.5.1/include/SFML/TargetConditionals.h
@@ -687,28 +685,4 @@ iostream
 -
 SFML/Graphics.hpp
 /Users/ke/CLionProjects/COP3530FinalProject/SFML/Graphics.hpp
-
->>>>>>> Shoujing
-/Users/ke/CLionProjects/COP3530FinalProject/main.cpp
-iostream
--
-map
--
-vector
--
-string
--
-fstream
--
-set
--
-stack
--
-queue
--
-<<<<<<< HEAD
-=======
-SFML_Process.h
-/Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.h
->>>>>>> Shoujing
 

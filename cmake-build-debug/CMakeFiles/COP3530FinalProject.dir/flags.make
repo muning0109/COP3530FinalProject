@@ -8,5 +8,3 @@ CXX_INCLUDES = -I/Users/ke/CLionProjects/COP3530FinalProject/src/SFML-2.5.1/incl
 
 CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -std=gnu++11
 
-CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -std=gnu++11
-
