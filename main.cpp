@@ -6,6 +6,7 @@
 #include <set>
 #include <stack>
 #include <queue>
+#include "SFML_Process.h"
 using namespace std;
 
 class Graph{
@@ -124,5 +125,8 @@ int main()
     int to = 21340;
 
     emailGraph.printGraph(from,to,36692);
+
+    SFML_Process::window();
+
     return 0;
 }
