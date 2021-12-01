@@ -5,7 +5,7 @@
 		<Option title="COP3530FinalProject"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug"/>
@@ -44,8 +44,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/ke/CLionProjects/COP3530FinalProject/src/SFML-2.5.1/include"/>
 					<Add directory="/usr/local/include"/>
+<<<<<<< HEAD
+=======
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+>>>>>>> Shoujing
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -65,8 +69,12 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/ke/CLionProjects/COP3530FinalProject/src/SFML-2.5.1/include"/>
 					<Add directory="/usr/local/include"/>
+<<<<<<< HEAD
+=======
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+>>>>>>> Shoujing
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -80,11 +88,38 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+<<<<<<< HEAD
 		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/main.cpp">
 			<Option target="COP3530FinalProject"/>
 		</Unit>
+=======
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.cpp">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.h">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/main.cpp">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+>>>>>>> Shoujing
 		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

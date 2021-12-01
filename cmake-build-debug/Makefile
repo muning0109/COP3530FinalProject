@@ -142,6 +142,33 @@ COP3530FinalProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/build
 .PHONY : COP3530FinalProject/fast
 
+SFML_Process.o: SFML_Process.cpp.o
+
+.PHONY : SFML_Process.o
+
+# target to build an object file
+SFML_Process.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.o
+.PHONY : SFML_Process.cpp.o
+
+SFML_Process.i: SFML_Process.cpp.i
+
+.PHONY : SFML_Process.i
+
+# target to preprocess a source file
+SFML_Process.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.i
+.PHONY : SFML_Process.cpp.i
+
+SFML_Process.s: SFML_Process.cpp.s
+
+.PHONY : SFML_Process.s
+
+# target to generate assembly for a file
+SFML_Process.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.s
+.PHONY : SFML_Process.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... COP3530FinalProject"
+	@echo "... SFML_Process.o"
+	@echo "... SFML_Process.i"
+	@echo "... SFML_Process.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

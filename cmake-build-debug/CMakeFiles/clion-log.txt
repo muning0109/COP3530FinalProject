@@ -1,4 +1,5 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ke/CLionProjects/COP3530FinalProject
+<<<<<<< HEAD
 -- The C compiler identification is AppleClang 13.0.0.13000029
 -- The CXX compiler identification is AppleClang 13.0.0.13000029
 -- Detecting C compiler ABI info
@@ -11,6 +12,9 @@
 -- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+=======
+-- Found SFML 2.5.1 in /usr/local/lib/cmake/SFML
+>>>>>>> Shoujing
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug
