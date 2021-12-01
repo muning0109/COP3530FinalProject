@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/muningchen/Desktop/COP3530FinalProject/main.cpp
+/Users/ke/CLionProjects/COP3530FinalProject/main.cpp
 iostream
 -
 map
@@ -20,5 +20,7 @@ fstream
 set
 -
 stack
+-
+queue
 -
 
