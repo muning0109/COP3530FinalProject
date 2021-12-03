@@ -5,86 +5,109 @@
 		<Option title="COP3530FinalProject"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug"/>
+				<Option working_dir="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug"/>
+				<Option working_dir="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug"/>
+				<Option working_dir="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="COP3530FinalProject">
-				<Option output="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/COP3530FinalProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug"/>
+				<Option output="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/COP3530FinalProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/ke/CLionProjects/COP3530FinalProject/src/SFML-2.5.1/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 COP3530FinalProject"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 COP3530FinalProject"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="COP3530FinalProject/fast">
-				<Option output="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/COP3530FinalProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug"/>
+				<Option output="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/COP3530FinalProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Users/ke/CLionProjects/COP3530FinalProject/src/SFML-2.5.1/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 COP3530FinalProject/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muningchen/Desktop/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 COP3530FinalProject/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/muningchen/Desktop/COP3530FinalProject/main.cpp">
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.cpp">
 			<Option target="COP3530FinalProject"/>
 		</Unit>
-		<Unit filename="/Users/muningchen/Desktop/COP3530FinalProject/CMakeLists.txt">
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.h">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/main.cpp">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
