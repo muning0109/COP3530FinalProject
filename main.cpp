@@ -7,6 +7,7 @@
 #include <stack>
 #include <queue>
 #include <list>
+#include "SFML_Process.h"
 using namespace std;
 
 class Graph{
@@ -179,5 +180,7 @@ int main()
     emailGraph.BFSprintGraph(from,to,36692);
     cout << endl;
     emailGraph.DFSprintGraph(from,to,36692);
+
+    SFML_Process::window();
     return 0;
 }
