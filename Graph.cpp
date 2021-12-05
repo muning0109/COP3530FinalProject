@@ -39,6 +39,7 @@ bool Graph::checkConnection(int& source, int& destiny)
 }
 
 bool Graph::BFScheckConnection(int &source, int &destiny, int *prev,int n) {
+    clock_t start = clock();
     set<int> visited;
     queue<int> q;
     visited.insert(source);
@@ -93,6 +94,7 @@ bool Graph::DFScheckConnection(int &source, int &destiny, int *prev,int n) {
 }
 
 string Graph::BFSprintGraph(int &source, int &destiny, int n) {
+    auto startTime = std::chrono::high_resolution_clock::now();
     stringstream ss;
     int prev[n];
 
@@ -116,10 +118,15 @@ string Graph::BFSprintGraph(int &source, int &destiny, int n) {
         if (i % 9 == 0 && i != 0)
             ss << endl;
     }
+    auto endTime = std::chrono::high_resolution_clock::now();
+    auto t = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
+    ss << endl;
+    ss << "Total time use (in milli): " << to_string((double)t.count());
     return ss.str();
 }
 
 string Graph::DFSprintGraph(int &source, int &destiny, int n) {
+    auto startTime = std::chrono::high_resolution_clock::now();
     stringstream ss;
     int prev[n];
 
@@ -143,5 +150,9 @@ string Graph::DFSprintGraph(int &source, int &destiny, int n) {
         if (i % 9 == 0 && i != 0)
             ss << endl;
     }
+    auto endTime = std::chrono::high_resolution_clock::now();
+    auto t = chrono::duration_cast<chrono::microseconds>(endTime - startTime);
+    ss << endl;
+    ss << "Total time use (in milli): " << to_string((double)t.count());
     return ss.str();
 }
