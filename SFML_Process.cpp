@@ -4,6 +4,9 @@ vector<bool> SFML_Process::button = {true, false};
 vector<bool> SFML_Process::inputBox = {false, false};
 string SFML_Process::input[2] = {"", ""};
 bool SFML_Process::key_Enter = false;
+bool SFML_Process::isEnter = false;
+bool SFML_Process::isDFSWindow = true;
+
 
 void SFML_Process::window()
 {
@@ -25,7 +28,10 @@ void SFML_Process::window()
                     if(event.type == sf::Event::TextEntered)
                     {
                         if(sf::Keyboard::isKeyPressed(sf::Keyboard::BackSpace))
+                        {
                             input[i].pop_back();
+                            isEnter = false;
+                        }
                         else
                             if(isdigit(static_cast<char>(event.text.unicode)))
                                 input[i] += static_cast<char>(event.text.unicode);
@@ -48,12 +54,19 @@ void SFML_Process::windowProcess(sf::RenderWindow& window)
     Menu(window);
     window.draw(line());
     projectInfo(window);
-    DFS_BFS_processWindow(window);
+    inputWindow(window);
     processButton(window);
     resetButton(window);
+    if (isEnter)
+    {
+        if (isDFSWindow)
+            DFS_Output(window);
+        else
+            BFS_Output(window);
+    }
 }
 
-void SFML_Process::displayText(sf::RenderWindow& window, string output, int fontStyle, float x, float y)
+void SFML_Process::displayText(sf::RenderWindow& window, string output, int fontStyle, float x, float y, bool isCenter)
 {
     sf::Text t;
     sf::Font f1;
@@ -66,7 +79,8 @@ void SFML_Process::displayText(sf::RenderWindow& window, string output, int font
     t.setCharacterSize(35);
     t.setFillColor(sf::Color::Black);
     sf::FloatRect textRect = t.getLocalBounds();
-    t.setOrigin(textRect.left + textRect.width / 2.0f, textRect.top + textRect.height / 2.0f);
+    if (isCenter)
+        t.setOrigin(textRect.left + textRect.width / 2.0f, textRect.top + textRect.height / 2.0f);
     t.setPosition(sf::Vector2f(x / 2.0f, y / 2.0f));
     window.draw(t);
 }
@@ -80,7 +94,7 @@ void SFML_Process::Menu(sf::RenderWindow& window)
         r1.setFillColor(sf::Color(UINT8_C(0), INT8_C(255), INT8_C(255), 255));
         r1.setPosition(0, 0);
         window.draw(r1);
-        displayText(window, "Menu", 1, 500, 100);
+        displayText(window, "Menu", 1, 500, 100, true);
     }
 
     ///Button "RUN AS DFS"
@@ -88,7 +102,7 @@ void SFML_Process::Menu(sf::RenderWindow& window)
         sf::RectangleShape r2 = menuButton(10,100.f, 0);
         checkMouseClick(window, r2, 0);
         window.draw(r2);
-        displayText(window, "Run as DFS", 2, 500, 300);
+        displayText(window, "Run as DFS", 2, 500, 300, true);
     }
 
     ///Button "RUN AS BFS"
@@ -96,7 +110,7 @@ void SFML_Process::Menu(sf::RenderWindow& window)
         sf::RectangleShape r3 = menuButton(10,220.f, 1);
         checkMouseClick(window, r3, 1);
         window.draw(r3);
-        displayText(window, "Run as BFS", 2, 500, 535);
+        displayText(window, "Run as BFS", 2, 500, 535, true);
     }
 }
 
@@ -133,6 +147,10 @@ void SFML_Process::checkMouseClick(sf::RenderWindow& window, sf::RectangleShape 
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             button[buttonIndex] = true;
+            if (buttonIndex == 0)
+                isDFSWindow = true;
+            else
+                isDFSWindow = false;
             for(int i = 0; i < button.size(); i++)
                 if(i != buttonIndex)
                     button[i] = false;
@@ -157,7 +175,7 @@ void SFML_Process::projectInfo(sf::RenderWindow& window)
     window.draw(t);
 }
 
-void SFML_Process::DFS_BFS_processWindow(sf::RenderWindow& window)
+void SFML_Process::inputWindow(sf::RenderWindow& window)
 {
     ///input box
     //from
@@ -172,7 +190,7 @@ void SFML_Process::DFS_BFS_processWindow(sf::RenderWindow& window)
     r.setOutlineThickness(5);
     r.setOutlineColor(sf::Color::Black);
     window.draw(r);
-    displayText(window, "From:", 2, 1150, 150);
+    displayText(window, "From:", 2, 1150, 150, true);
 
     //to
     sf::RectangleShape r2;
@@ -186,7 +204,7 @@ void SFML_Process::DFS_BFS_processWindow(sf::RenderWindow& window)
     r2.setOutlineThickness(5);
     r2.setOutlineColor(sf::Color::Black);
     window.draw(r2);
-    displayText(window, "To:", 2, 1150, 350);
+    displayText(window, "To:", 2, 1150, 350, true);
 
     ///displayInput
     sf::Font f1;
@@ -224,7 +242,7 @@ void SFML_Process::checkMouseClick_inputBox(sf::RenderWindow &window, sf::Rectan
 
 void SFML_Process::processButton(sf::RenderWindow &window)
 {
-    displayText(window,"Press 'Enter' or ", 2, 1375, 550);
+    displayText(window,"Press 'Enter' or ", 2, 1375, 550, true);
 
     ///display button
     sf::RectangleShape r2;
@@ -237,12 +255,14 @@ void SFML_Process::processButton(sf::RenderWindow &window)
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             r2.setFillColor(sf::Color(UINT8_C(0), INT8_C(153), INT8_C(153), 255));
+            isEnter = true;
         }
     }
     if (key_Enter)
     {
         r2.setFillColor(sf::Color(UINT8_C(0), INT8_C(153), INT8_C(153), 255));
         key_Enter = false;
+        isEnter = true;
     }
     r2.setOutlineColor(sf::Color(UINT8_C(128), INT8_C(128), INT8_C(128), 255));
     r2.setOutlineThickness(10);
@@ -275,6 +295,7 @@ void SFML_Process::resetButton(sf::RenderWindow& window)
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
             r2.setFillColor(sf::Color(UINT8_C(0), INT8_C(153), INT8_C(153), 255));
+            isEnter = false;
         }
     }
     r2.setOutlineColor(sf::Color(UINT8_C(128), INT8_C(128), INT8_C(128), 255));
@@ -299,6 +320,32 @@ void SFML_Process::resetButton(sf::RenderWindow& window)
         if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
             for (int i = 0; i < sizeof(input)/sizeof(input[0]); ++i)
                 input[i] = "";
+}
+
+string SFML_Process::getInput1()
+{
+    return input[0];
+}
+
+string SFML_Process::getInput2()
+{
+    return input[1];
+}
+
+void SFML_Process::BFS_Output(sf::RenderWindow& window)
+{
+    outputProcess::getInput();
+    //BFS
+    displayText(window,"BFS:", 1, 1200, 800, true);
+    displayText(window,outputProcess::getBFSOutput(), 2, 1300, 755, false);
+}
+
+void SFML_Process::DFS_Output(sf::RenderWindow &window)
+{
+    outputProcess::getInput();
+    //DFS
+    displayText(window,"DFS:", 1, 1200, 800, true);
+    displayText(window,outputProcess::getDFSOutput(), 2, 1300, 755, false);
 }
 
 

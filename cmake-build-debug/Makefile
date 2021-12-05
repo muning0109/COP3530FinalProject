@@ -142,6 +142,33 @@ COP3530FinalProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/build
 .PHONY : COP3530FinalProject/fast
 
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 SFML_Process.o: SFML_Process.cpp.o
 
 .PHONY : SFML_Process.o
@@ -196,6 +223,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+outputProcess.o: outputProcess.cpp.o
+
+.PHONY : outputProcess.o
+
+# target to build an object file
+outputProcess.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o
+.PHONY : outputProcess.cpp.o
+
+outputProcess.i: outputProcess.cpp.i
+
+.PHONY : outputProcess.i
+
+# target to preprocess a source file
+outputProcess.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.i
+.PHONY : outputProcess.cpp.i
+
+outputProcess.s: outputProcess.cpp.s
+
+.PHONY : outputProcess.s
+
+# target to generate assembly for a file
+outputProcess.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/COP3530FinalProject.dir/build.make CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.s
+.PHONY : outputProcess.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,12 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... COP3530FinalProject"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... SFML_Process.o"
 	@echo "... SFML_Process.i"
 	@echo "... SFML_Process.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... outputProcess.o"
+	@echo "... outputProcess.i"
+	@echo "... outputProcess.s"
 .PHONY : help
 
 

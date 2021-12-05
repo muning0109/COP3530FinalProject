@@ -21,7 +21,9 @@ public:
     vector<int> adjacentVertices(int& source);
     bool checkConnection(int& source, int& destiny);
     bool BFScheckConnection(int& source, int& destiny, int *prev,int n);
-    string printGraph(int source, int destiny, int n);
+    string BFSprintGraph(int& source, int& destiny, int n);
+    bool DFScheckConnection(int &source, int &destiny, int *prev,int n);
+    string DFSprintGraph(int& source, int& destiny, int n);
 };
 
 

@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/Graph.cpp">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/Graph.h">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
 		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.cpp">
 			<Option target="COP3530FinalProject"/>
 		</Unit>
@@ -89,6 +95,12 @@
 			<Option target="COP3530FinalProject"/>
 		</Unit>
 		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/main.cpp">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/outputProcess.cpp">
+			<Option target="COP3530FinalProject"/>
+		</Unit>
+		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/outputProcess.h">
 			<Option target="COP3530FinalProject"/>
 		</Unit>
 		<Unit filename="/Users/ke/CLionProjects/COP3530FinalProject/CMakeLists.txt">

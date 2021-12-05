@@ -102,16 +102,46 @@ CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ke/CLionProjects/COP3530FinalProject/SFML_Process.cpp -o CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.s
 
+CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o: CMakeFiles/COP3530FinalProject.dir/flags.make
+CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o: ../Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o -c /Users/ke/CLionProjects/COP3530FinalProject/Graph.cpp
+
+CMakeFiles/COP3530FinalProject.dir/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COP3530FinalProject.dir/Graph.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ke/CLionProjects/COP3530FinalProject/Graph.cpp > CMakeFiles/COP3530FinalProject.dir/Graph.cpp.i
+
+CMakeFiles/COP3530FinalProject.dir/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COP3530FinalProject.dir/Graph.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ke/CLionProjects/COP3530FinalProject/Graph.cpp -o CMakeFiles/COP3530FinalProject.dir/Graph.cpp.s
+
+CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o: CMakeFiles/COP3530FinalProject.dir/flags.make
+CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o: ../outputProcess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o -c /Users/ke/CLionProjects/COP3530FinalProject/outputProcess.cpp
+
+CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ke/CLionProjects/COP3530FinalProject/outputProcess.cpp > CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.i
+
+CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ke/CLionProjects/COP3530FinalProject/outputProcess.cpp -o CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.s
+
 # Object files for target COP3530FinalProject
 COP3530FinalProject_OBJECTS = \
 "CMakeFiles/COP3530FinalProject.dir/main.cpp.o" \
-"CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.o"
+"CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.o" \
+"CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o" \
+"CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o"
 
 # External object files for target COP3530FinalProject
 COP3530FinalProject_EXTERNAL_OBJECTS =
 
 COP3530FinalProject: CMakeFiles/COP3530FinalProject.dir/main.cpp.o
 COP3530FinalProject: CMakeFiles/COP3530FinalProject.dir/SFML_Process.cpp.o
+COP3530FinalProject: CMakeFiles/COP3530FinalProject.dir/Graph.cpp.o
+COP3530FinalProject: CMakeFiles/COP3530FinalProject.dir/outputProcess.cpp.o
 COP3530FinalProject: CMakeFiles/COP3530FinalProject.dir/build.make
 COP3530FinalProject: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 COP3530FinalProject: /usr/local/lib/libsfml-audio.2.5.1.dylib
@@ -119,7 +149,7 @@ COP3530FinalProject: /usr/local/lib/libsfml-network.2.5.1.dylib
 COP3530FinalProject: /usr/local/lib/libsfml-window.2.5.1.dylib
 COP3530FinalProject: /usr/local/lib/libsfml-system.2.5.1.dylib
 COP3530FinalProject: CMakeFiles/COP3530FinalProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable COP3530FinalProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ke/CLionProjects/COP3530FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable COP3530FinalProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/COP3530FinalProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

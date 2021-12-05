@@ -9,14 +9,14 @@ using namespace std;
 
 class outputProcess
 {
-    static string BFSOutput;
     static int input1;
     static int input2;
     static Graph* graph;
 public:
     static string getBFSOutput();
+    static string getDFSOutput();
     static void getInput();
-    static void getGraph(Graph* g);
+    static void inputGraph(Graph* g);
 
 private:
 
