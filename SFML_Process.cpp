@@ -6,6 +6,8 @@ string SFML_Process::input[2] = {"", ""};
 bool SFML_Process::key_Enter = false;
 bool SFML_Process::isEnter = false;
 bool SFML_Process::isDFSWindow = true;
+string SFML_Process::displayOnce="";
+bool SFML_Process::stop=false;
 
 
 void SFML_Process::window()
@@ -63,6 +65,7 @@ void SFML_Process::windowProcess(sf::RenderWindow& window)
             DFS_Output(window);
         else
             BFS_Output(window);
+            stop=true;
     }
 }
 
@@ -296,6 +299,7 @@ void SFML_Process::resetButton(sf::RenderWindow& window)
         {
             r2.setFillColor(sf::Color(UINT8_C(0), INT8_C(153), INT8_C(153), 255));
             isEnter = false;
+            stop=false;
         }
     }
     r2.setOutlineColor(sf::Color(UINT8_C(128), INT8_C(128), INT8_C(128), 255));
@@ -337,7 +341,12 @@ void SFML_Process::BFS_Output(sf::RenderWindow& window)
     outputProcess::getInput();
     //BFS
     displayText(window,"BFS:", 1, 1200, 800, true);
-    displayText(window,outputProcess::getBFSOutput(), 2, 1300, 755, false);
+    if(!stop){
+        displayOnce=outputProcess::getBFSOutput();
+    }
+    else{
+        displayText(window,displayOnce, 2, 1300, 755, false);
+    }
 }
 
 void SFML_Process::DFS_Output(sf::RenderWindow &window)
@@ -345,7 +354,12 @@ void SFML_Process::DFS_Output(sf::RenderWindow &window)
     outputProcess::getInput();
     //DFS
     displayText(window,"DFS:", 1, 1200, 800, true);
-    displayText(window,outputProcess::getDFSOutput(), 2, 1300, 755, false);
+    if(!stop){
+        displayOnce=outputProcess::getDFSOutput();
+    }
+    else{
+        displayText(window,displayOnce, 2, 1300, 755, false);
+    }
 }
 
 

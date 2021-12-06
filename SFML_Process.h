@@ -16,6 +16,9 @@ class SFML_Process
     static bool isEnter;
     static bool isDFSWindow;
 
+    static string displayOnce;
+    static bool stop;
+
 public: static void window();
         static string getInput1();
         static string getInput2();
