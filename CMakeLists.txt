@@ -3,7 +3,7 @@ project(COP3530FinalProject)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp SFML_Process.cpp SFML_Process.h)
+set(SOURCE_FILES main.cpp SFML_Process.cpp SFML_Process.h Graph.h Graph.cpp outputProcess.h outputProcess.cpp)
 add_executable(COP3530FinalProject ${SOURCE_FILES})
 include_directories(src/SFML-2.5.1/include)
 
